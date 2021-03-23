@@ -1,0 +1,19 @@
+
+server.port: 8084
+app.name: myconfigproject
+greating.message: Hello from yml to ${app.name}
+my:
+ list: abc, xyz, uvw
+ dbvalues.as.object: "{connectionUrl: 'http://gitconfigserverurl', username:'foo', password:'pass'}"
+
+db:
+ connection: http://gitconfigdbserverurl
+ host: dbhost
+ port: 8525
+
+management.endpoints.web.exposure.include: "*"
+#http://localhost:8080/actuator/configprops
+
+spring:
+  profiles:
+    active: test
