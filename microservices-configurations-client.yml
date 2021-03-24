@@ -1,0 +1,18 @@
+server:port: 8084
+app.name: io.ms.config.client
+greating.message: Hello from ${app.name}
+my:
+ list: abc, xyz, uvw
+ dbvalues.as.object: "{connectionUrl: 'http://localgiturl', username:'foo', password:'pass'}"
+
+db:
+ connection: "default  http://thisislocalgitdburl.io.ms.config.client"
+ host: dblocalgithost.io.ms.config.client
+ port: 8525
+
+management.endpoints.web.exposure.include: "*"
+#http://localhost:8080/actuator/configprops
+
+spring:
+  profiles:
+    active: default

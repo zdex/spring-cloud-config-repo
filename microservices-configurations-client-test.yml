@@ -6,13 +6,9 @@ my:
  dbvalues.as.object: "{connectionUrl: 'http://localgiturl', username:'foo', password:'pass'}"
 
 db:
- connection: http://thisislocalgitdburlio.ms.config.client
- host: dblocalgithostio.ms.config.client
+ connection: "updated in test profile http://thisislocalgitdburl.io.ms.config.client"
+ host: dblocalgithost.io.ms.config.client
  port: 8525
 
 management.endpoints.web.exposure.include: "*"
 #http://localhost:8080/actuator/configprops
-
-spring:
-  profiles:
-    active: test
